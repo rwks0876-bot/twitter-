@@ -3,254 +3,450 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إسراء - مدونتي الشخصية</title>
-    <!-- وصف الميتا مع الكلمات المفتاحية المطلوبة، مكتوبة بطريقة طبيعية -->
-    <meta name="description" content="مدونة إسراء الشخصية: بنت جدة، بنت الرياض، بنت السعودية. مرحباً بكم في مساحتي الخاصة للتواصل مع الجادين.">
-    <meta name="keywords" content="إسراء, إسراء جادة, بنت الرياض, بنت المدينة, بنت جدة, بنت السعودية, مطلقة جادة, بنت الدمام">
+    <title>إسراء | بنت الرياض</title>
+    <meta name="description" content="إسراء | بنت الرياض، بنت السعودية. مدونة شخصية أنيقة للتواصل مع الأشخاص الجادين والمحترمين.">
+    <meta name="keywords" content="إسراء, بنت الرياض, بنت السعودية, جادة, للجادين">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* الأنماط الأساسية */
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        
         body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
+            background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%);
+            color: #4a044e;
             min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+        
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(219, 39, 119, 0.15);
             overflow: hidden;
-            border: 1px solid #e1e8ed;
+            border: 1px solid rgba(251, 207, 232, 0.5);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
         }
-        /* رأس الصفحة والصورة الدائرية */
+        
+        .container:hover {
+            box-shadow: 0 25px 60px rgba(219, 39, 119, 0.2);
+        }
+        
+        /* الرأس */
         header {
-            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+            background: linear-gradient(90deg, #db2777 0%, #be185d 100%);
             color: white;
             text-align: center;
-            padding: 40px 20px 30px;
+            padding: 50px 30px 40px;
             position: relative;
-        }
-        .profile-img-container {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 6px solid white;
             overflow: hidden;
-            margin: 0 auto 20px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.3;
+        }
+        
+        .profile-container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .profile-img-wrapper {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 6px solid rgba(255, 255, 255, 0.9);
+            overflow: hidden;
+            margin: 0 auto 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        
+        .profile-img-wrapper:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
         .profile-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+        
         h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
+            font-size: 3.2em;
+            margin-bottom: 15px;
             letter-spacing: -0.5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: 800;
         }
-        .tagline {
-            font-size: 1.2em;
+        
+        .title {
+            font-size: 1.4em;
             opacity: 0.95;
             font-weight: 300;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            backdrop-filter: blur(5px);
+            margin-bottom: 10px;
         }
-        /* المحتوى الرئيسي */
+        
+        /* المحتوى */
         main {
-            padding: 35px;
+            padding: 40px;
         }
-        section {
-            margin-bottom: 35px;
+        
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px dashed #fbcfe8;
         }
+        
         h2 {
-            color: #6a11cb;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 12px;
-            margin-bottom: 20px;
+            color: #db2777;
             font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
+        
+        h2 i {
+            background: linear-gradient(45deg, #db2777, #be185d);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
         p {
-            margin-bottom: 18px;
-            font-size: 1.1em;
-            color: #555;
+            font-size: 1.15em;
+            line-height: 1.7;
+            color: #701a75;
+            margin-bottom: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding-right: 20px;
+        
+        .highlight {
+            background: linear-gradient(120deg, #fce7f3 0%, #fbcfe8 100%);
+            padding: 25px;
+            border-radius: 20px;
+            border-right: 5px solid #db2777;
+            margin: 25px 0;
         }
-        ul li {
-            padding: 12px 0;
-            border-bottom: 1px dashed #eee;
-            font-size: 1.05em;
+        
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
         }
-        ul li:last-child {
-            border-bottom: none;
+        
+        .tag {
+            background: linear-gradient(45deg, #f472b6, #db2777);
+            color: white;
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(219, 39, 119, 0.2);
+            transition: all 0.3s ease;
         }
+        
+        .tag:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(219, 39, 119, 0.3);
+        }
+        
         /* أزرار التواصل */
-        .contact-buttons {
+        .contact-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .buttons {
             display: flex;
             flex-direction: column;
-            gap: 18px;
-            margin-top: 30px;
+            gap: 20px;
+            max-width: 500px;
+            margin: 30px auto;
         }
+        
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 18px 25px;
-            background: linear-gradient(90deg, #2575fc 0%, #6a11cb 100%);
-            color: white;
+            gap: 15px;
+            padding: 22px 30px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
+            border-radius: 20px;
+            font-weight: 700;
             font-size: 1.2em;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 15px rgba(37, 117, 252, 0.3);
-            border: none;
-            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
         }
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 20px rgba(37, 117, 252, 0.4);
-            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: width 0.4s ease;
+            z-index: -1;
         }
-        .btn-telegram {
-            background: linear-gradient(90deg, #0088cc 0%, #34b7f1 100%);
-            box-shadow: 0 6px 15px rgba(0, 136, 204, 0.3);
+        
+        .btn:hover::before {
+            width: 100%;
         }
-        .btn-telegram:hover {
-            box-shadow: 0 12px 20px rgba(0, 136, 204, 0.4);
+        
+        .btn-primary {
+            background: linear-gradient(90deg, #db2777 0%, #be185d 100%);
+            color: white;
+            box-shadow: 0 10px 25px rgba(219, 39, 119, 0.3);
         }
-        .btn-icon {
-            width: 26px;
-            height: 26px;
-            margin-left: 12px;
-            filter: brightness(0) invert(1);
+        
+        .btn-primary:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(219, 39, 119, 0.4);
         }
+        
+        .btn-secondary {
+            background: linear-gradient(90deg, #9333ea 0%, #7c3aed 100%);
+            color: white;
+            box-shadow: 0 10px 25px rgba(147, 51, 234, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(147, 51, 234, 0.4);
+        }
+        
+        .btn i {
+            font-size: 1.4em;
+        }
+        
+        .note {
+            font-size: 0.95em;
+            color: #a855f7;
+            margin-top: 25px;
+            padding: 15px;
+            background: rgba(248, 250, 252, 0.8);
+            border-radius: 15px;
+            border: 1px solid #f0abfc;
+        }
+        
         /* الفوتر */
         footer {
             text-align: center;
             padding: 25px;
-            background-color: #f8f9fa;
-            color: #666;
-            border-top: 1px solid #e1e8ed;
+            background: rgba(251, 207, 232, 0.3);
+            color: #701a75;
             font-size: 0.95em;
         }
-        /* تصميم متجاوب للهواتف */
+        
+        .heart {
+            color: #db2777;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        /* تصميم للهواتف */
         @media (max-width: 768px) {
             .container {
-                margin: 10px auto;
-                border-radius: 20px;
+                max-width: 95%;
+                border-radius: 25px;
             }
+            
             header {
-                padding: 30px 15px 25px;
+                padding: 40px 20px 30px;
             }
-            .profile-img-container {
-                width: 150px;
-                height: 150px;
+            
+            .profile-img-wrapper {
+                width: 170px;
+                height: 170px;
             }
+            
             h1 {
-                font-size: 2.2em;
+                font-size: 2.5em;
             }
+            
+            .title {
+                font-size: 1.2em;
+                padding: 8px 20px;
+            }
+            
             main {
-                padding: 25px;
+                padding: 30px 25px;
             }
+            
             h2 {
                 font-size: 1.6em;
             }
+            
             .btn {
-                padding: 16px 20px;
+                padding: 20px 25px;
                 font-size: 1.1em;
             }
-        }
-        @media (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-            h1 {
-                font-size: 1.9em;
-            }
-            .tagline {
-                font-size: 1em;
-            }
-            .contact-buttons {
+            
+            .buttons {
                 gap: 15px;
             }
         }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .profile-img-wrapper {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .title {
+                font-size: 1.1em;
+            }
+            
+            .tags {
+                justify-content: center;
+            }
+            
+            .btn {
+                flex-direction: column;
+                gap: 10px;
+                padding: 18px 20px;
+            }
+        }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <!-- صورة الملف الشخصي -->
-            <div class="profile-img-container">
-                <img src="aa.jpg" alt="صورة إسراء الشخصية" class="profile-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'width:100%;height:100%;background:#ddd;display:flex;align-items:center;justify-content:center;color:#777;\'><i class=\'fas fa-user\' style=\'font-size:3em;\'></i></div>';">
+            <div class="profile-container">
+                <div class="profile-img-wrapper">
+                    <img src="aa.jpg" alt="صورة إسراء الشخصية" class="profile-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"200\" height=\"200\" viewBox=\"0 0 200 200\"><rect width=\"200\" height=\"200\" fill=\"%23fce7f3\"/><circle cx=\"100\" cy=\"80\" r=\"40\" fill=\"%23db2777\"/><path d=\"M100,130 C60,130 40,180 40,180 L160,180 C160,180 140,130 100,130 Z\" fill=\"%23db2777\"/></svg>';">
+                </div>
+                <h1>إسراء</h1>
+                <div class="title">بنت الرياض | بنت السعودية</div>
             </div>
-            <h1>إسراء</h1>
-            <p class="tagline">بنت جدة &middot; بنت الرياض &middot; مدونتي الشخصية</p>
         </header>
-
+        
         <main>
-            <section id="about">
-                <h2><i class="fas fa-star" style="color: #6a11cb; margin-left: 10px;"></i>من أنا؟</h2>
-                <p>مرحباً بكم في مساحتي الخاصة على الإنترنت. أنا <strong>إسراء</strong>، ابنة هذه البلاد الطيبة من جدة إلى الرياض.</p>
-                <p>هذه المدونة هي نافذتي لأشارككم فيها أفكاري ومساحتي للتواصل مع الأشخاص <strong>الجادين</strong> والهادفين.</p>
+            <section class="section">
+                <h2><i class="fas fa-heart"></i>مرحباً بكم في عالمي</h2>
+                <p>أهلاً وسهلاً بكم في مساحتي الخاصة على الإنترنت. أنا <strong>إسراء</strong>، ابنة مدينة الرياض وابنة المملكة العربية السعودية التي أعتز بها.</p>
+                
+                <div class="highlight">
+                    <p>هذه المدونة هي نافذتي لأشارك فيها تفاصيل عالمي الخاص، وأتواصل من خلالها مع الأشخاص <strong>الجادين والمحترمين</strong> الذين يقدرون قيمة الحوار الهادف.</p>
+                </div>
+                
+                <div class="tags">
+                    <div class="tag">بنت الرياض</div>
+                    <div class="tag">بنت السعودية</div>
+                    <div class="tag">للجادين فقط</div>
+                </div>
             </section>
-
-            <section id="keywords">
-                <h2><i class="fas fa-hashtag" style="color: #6a11cb; margin-left: 10px;"></i>كلماتي المفتاحية</h2>
-                <ul>
-                    <li><i class="fas fa-female" style="color: #2575fc; margin-left: 10px;"></i> إسراء جادة</li>
-                    <li><i class="fas fa-city" style="color: #2575fc; margin-left: 10px;"></i> بنت الرياض | بنت جدة | بنت الدمام</li>
-                    <li><i class="fas fa-flag" style="color: #2575fc; margin-left: 10px;"></i> بنت السعودية</li>
-                    <li><i class="fas fa-heart" style="color: #2575fc; margin-left: 10px;"></i> للجادين فقط</li>
+            
+            <section class="section">
+                <h2><i class="fas fa-star"></i>كلماتي المفتاحية</h2>
+                <p>أحرص على أن أكون واضحة في تعبيري واهتماماتي. هذه هي الكلمات التي تعبر عني:</p>
+                
+                <ul style="list-style-type: none; padding-right: 20px;">
+                    <li style="padding: 12px 0; border-bottom: 1px dashed #fbcfe8; font-size: 1.1em;">
+                        <i class="fas fa-check-circle" style="color: #db2777; margin-left: 10px;"></i>
+                        <strong>بنت الرياض</strong> - هويتي ومدينتي التي أنتمي إليها بكل فخر
+                    </li>
+                    <li style="padding: 12px 0; border-bottom: 1px dashed #fbcfe8; font-size: 1.1em;">
+                        <i class="fas fa-check-circle" style="color: #db2777; margin-left: 10px;"></i>
+                        <strong>بنت السعودية</strong> - انتمائي لوطني العزيز الذي أعتز به
+                    </li>
+                    <li style="padding: 12px 0; font-size: 1.1em;">
+                        <i class="fas fa-check-circle" style="color: #db2777; margin-left: 10px;"></i>
+                        <strong>جادة</strong> - في تعاملي وتواصلي مع الآخرين
+                    </li>
                 </ul>
             </section>
-
-            <section id="contact">
-                <h2><i class="fas fa-paper-plane" style="color: #6a11cb; margin-left: 10px;"></i>تواصل معي</h2>
-                <p>أرحب بالتواصل مع الأشخاص <strong>الجادين والمحترمين</strong> فقط. يمكنك التواصل معي عبر التليجرام من خلال الروابط أدناه:</p>
-
-                <div class="contact-buttons">
-                    <!-- زر التواصل الشخصي -->
-                    <a href="https://t.me/Bl0537163826" class="btn btn-telegram" target="_blank">
-                        <i class="fab fa-telegram-plane btn-icon"></i> تواصل معي على التليجرام (للجادين)
+            
+            <section class="contact-section">
+                <h2><i class="fas fa-paper-plane"></i>تواصل معي</h2>
+                <p>أرحب بالتواصل مع الأشخاص <strong>الجادين والمحترمين</strong> فقط. الرجاء ذكر سبب التواصل بوضوح عند المراسلة.</p>
+                
+                <div class="buttons">
+                    <a href="https://t.me/Bl0537163826" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                        تواصل معي على التليجرام
                     </a>
-                    <!-- زر القناة -->
-                    <a href="https://t.me/eeccyreejjjikeiiiiovx" class="btn" target="_blank" style="background: linear-gradient(90deg, #9333ea 0%, #d946ef 100%);">
-                        <i class="fas fa-broadcast-tower btn-icon"></i> انضم إلى قناتي على التليجرام
+                    
+                    <a href="https://t.me/eeccyreejjjikeiiiiovx" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-broadcast-tower"></i>
+                        انضم إلى قناتي على التليجرام
                     </a>
                 </div>
-
-                <p style="margin-top: 25px; font-size: 1em; color: #777; text-align: center;">
-                    <i class="fas fa-info-circle" style="margin-left: 8px;"></i> الرجاء ذكر سبب التواصل بوضوح.
-                </p>
+                
+                <div class="note">
+                    <i class="fas fa-info-circle" style="margin-left: 8px;"></i>
+                    للتواصل مع الجادين فقط. الرجاء الالتزام بالأدب والاحترام في المراسلة.
+                </div>
             </section>
         </main>
-
+        
         <footer>
-            <p>© <span id="currentYear"></span> جميع الحقوق محفوظة - مدونة إسراء الشخصية</p>
-            <p style="margin-top: 8px; font-size: 0.9em;">للتتواصل مع الجادين فقط.</p>
+            <p>© <span id="currentYear"></span> جميع الحقوق محفوظة - إسراء | بنت الرياض</p>
+            <p style="margin-top: 10px;">صمم بـ <span class="heart">❤</span> خصيصاً لك</p>
         </footer>
     </div>
-
+    
     <script>
-        // لعرض السنة الحالية في الفوتر
+        // لعرض السنة الحالية
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // رسالة ترحيب بسيطة عند فتح الصفحة
-        window.onload = function() {
-            console.log("مرحباً بكم في موقع إسراء الشخصي. للجادين فقط.");
-        };
+        
+        // إضافة تأثيرات تفاعلية بسيطة
+        document.addEventListener('DOMContentLoaded', function() {
+            // تأثير تحميل تدريجي للعناصر
+            const elements = document.querySelectorAll('.section, .profile-img-wrapper, .buttons');
+            elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+            
+            // رسالة ترحيب في الكونسول
+            console.log('مرحباً بكم في موقع إسراء - بنت الرياض | بنت السعودية ❤️');
+        });
     </script>
 </body>
-      </html>
+                                                                         </html>
